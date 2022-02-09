@@ -35,4 +35,3 @@ Route::get('/gallery', function() {
 });
 
 Route::resource('/contacts', ContactController::class);
-
