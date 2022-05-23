@@ -19,7 +19,7 @@
         <label for="floatingTextarea2">Pesan</label>
             <textarea class="form-control" placeholder="Tinggalkan pesan disini!" id="floatingTextarea2" style="weight: 100px" name="pesan"></textarea>
         </div>
-        <button type="submit" class="btn btn-primary">Kirim</button>
+        <button type="submit" class="btn btn-primary" style="color: white; background-color: green; border-color:green;">Kirim</button>
     </form>
 
 @endsection
