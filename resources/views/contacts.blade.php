@@ -2,10 +2,10 @@
 
 @section('container')
 
-    <div class="title=top mb-5">
+    <div class="title=top mb-5" style="margin: 40px">
         <h2 class="fw-bold">Contact Us</h2>
     </div>
-    <form method="post" action="{{route('contacts.store')}}">
+    <form method="post" action="{{route('contacts.store')}}" style="margin: 40px">
         {{csrf_field()}}
         <div class="form floating mb-3">
             <label for="inputname">Nama</label>

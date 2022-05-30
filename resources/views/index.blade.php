@@ -1,6 +1,24 @@
 @extends('layouts.main')
 
 @section('container')
+<style>
+  #carouselExampleControls {
+    margin-bottom: 80px;
+  }
+  .col {
+    height: 180px;
+  }
+
+  .col img {
+    height: 180px;
+    width: 180px;
+  }
+
+  .jumbotron {
+    padding: 200px 80px 200px 80px;
+    background-color: #eeeeee;
+  }
+</style>
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -21,5 +39,50 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
+</div>
+<div class="container" style="display: grid; align-items: center; justify-content:center;">
+  <div class="row row-cols-5">
+    <div class="col">
+      <img src="/images/totebag.jpg" alt="totebag">
+    </div>
+    <div class="col">
+      <img src="/images/cup.jpg" alt="cup">
+    </div>
+    <div class="col">
+      <img src="/images/ecobag2.jpg" alt="ecobag">
+    </div>
+    <div class="col">
+      <img src="/images/shoulderbag.jpg" alt="shoulderbag">
+    </div><div class="col">
+      <img src="/images/shopbag.jpg" alt="shopbag">
+    </div>
+
   </div>
+</div>
+<div class="container" style="margin-top: 70px; margin-bottom: 80px; display: grid; align-items: center; justify-content: center;">
+  <div class="row row-cols-5">
+    <div class="col">
+      <img src="/images/toiletset.jpg" alt="toiletset">
+    </div>
+    <div class="col">
+      <img src="/images/tumblr.jpg" alt="tumblr">
+    </div>
+    <div class="col">
+      <img src="/images/ecobag.jpg" alt="ecobag">
+    </div>
+    <div class="col">
+      <img src="/images/cutlery.jpg" alt="cutlery">
+    </div>
+    <div class="col">
+      <img src="/images/minibox.jpg" alt="minibox">
+    </div>
+  </div>
+</div>
+<div class="jumbotron">
+  <h1 class="display-4">Gunakan Layanan ecompos</h1>
+  <p class="lead">Dapatkan fasilitas dari layanan kelola sampah kami dengan klik contact di bawah ini.</p>
+  <p class="lead">
+    <a class="btn btn-primary btn-lg" href="{{route('contacts.create') }}" role="button"  style="background-color: green; border-color: green;">Contact</a>
+  </p>
+</div>
 @endsection 
